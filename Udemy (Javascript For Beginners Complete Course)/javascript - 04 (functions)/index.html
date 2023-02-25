@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <style>
+      input,
+      button {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+    <script>
+      function displayInput(name, age) {
+        if (name == "" || age == "") return;
+        document.write("<h1> Name : " + name + "</h1>");
+        document.write("<h1> Age : " + age + "</h1>");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Javascript Functions</h1>
+    <form>
+      <input name="user" placeholder="Enter Name" /><br />
+      <input name="age" placeholder="Enter Age" /><br />
+      <button onclick="displayInput(user.value, age.value)">Display</button>
+    </form>
+  </body>
+</html>

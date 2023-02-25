@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statements</title>
+    <style>
+      input,
+      button {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+    <script>
+      document.write("<h1>JavaScript Conditional Statements</h1><br/>");
+      function marking(mark1, mark2, mark3) {
+        let total = parseInt(mark1) + parseInt(mark2) + parseInt(mark3);
+        let percent = (total * 100) / 150;
+        if (percent >= 80) document.write("<h2> Grade : A</h2>");
+        else if (percent >= 60) document.write("<h2> Grade : B</h2>");
+        else if (percent >= 40) document.write("<h2> Grade : C</h2>");
+        else document.write("<h2> Grade : F</h2>");
+        document.write(percent);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input name="marks1" value="10" placeholder="Marks 01" /><br />
+      <input name="marks2" value="20" placeholder="Marks 02" /><br />
+      <input name="marks3" value="30" placeholder="Marks 03" /><br />
+      <button onclick="marking(marks1.value, marks2.value, marks3.value)">
+        Clalulate
+      </button>
+    </form>
+  </body>
+</html>
