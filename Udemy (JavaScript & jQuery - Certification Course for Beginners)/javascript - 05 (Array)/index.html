@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+
+    <script>
+      var fruits = ["Apple", "Orange", "Pear", "Grape", "Tangerine", "Mango"];
+      document.write(fruits[0] + "<br/>");
+      document.write(fruits.toString() + "<br/>");
+      document.write(fruits.join(" | ") + "<br/>");
+      fruits.pop();
+      fruits.shift();
+      fruits.push("cherry");
+      document.write(fruits.toString() + "<br/>");
+      fruits[0] = "Kiwi";
+      fruits.splice(2, 0, "Lemon", "Banana");
+      document.write(fruits.toString() + "<br/>");
+
+      var car = ["Volvo", "Acura", "Honda", "Lexus"];
+      document.write(car.sort() + "<br/>");
+
+      var Girls = ["Julie", "Samantha", "Laura", "Jill"];
+      var Boys = ["Bob", "Joe", "Walt", "Sam", "Fred"];
+      document.write("Join Array : " + Girls.concat(Boys).toString());
+    </script>
+  </head>
+  <body>
+    <h1>Array</h1>
+  </body>
+</html>
